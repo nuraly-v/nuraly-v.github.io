@@ -15,7 +15,8 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
+    background-color: rgb(33, 33, 33);
+    color: white;
 }
 
 nav{
@@ -34,14 +35,14 @@ nav{
 }
 
 .logo{
-    color: black;
+    color: white;
     font-size: 2rem;
     font-weight: bolder;
 }
 
 .logo span{
-    color: rgb(109,67, 0);
-    text-shadow: 0 0 10px rgb(109,67, 0);
+    color:  rgb(250, 240, 230);
+    text-shadow: 0 0 10px  rgb(250, 240, 230);
 }
 
 .hamburg, .cancel{
@@ -49,7 +50,7 @@ nav{
     position: absolute;
     right: 15px;
     top: 10px;
-    color: black;
+    color: white;
     font-size: 2rem;
     display: none;
 }
@@ -63,7 +64,7 @@ nav{
 .nav-container .links a{
     position: relative;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transform: 0.3s linear;
@@ -76,7 +77,7 @@ nav{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: rgb(109,67, 0);
+    background-color:  rgb(250, 240, 230);
     transition: 0.2s linear;
 }
 
@@ -88,7 +89,7 @@ nav{
     background-color: transparent;
     padding: 5px 20px;
     border-radius: 20px;
-    border: 2px solid rgb(109,67, 0);
+    border: 2px solid  rgb(250, 240, 230);
     transition: 0.2s linear;
 }
 
@@ -98,12 +99,12 @@ nav{
 }
 
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
-    background-color: rgb(109,67, 0);
-    color: white;
+    background-color:  rgb(250, 240, 230);
+    color: rgb(33, 33, 33);
 }
 
 .nav-container .links a:hover{
-    color: rgb(109,67, 0);
+    color:  rgb(250, 240, 230);
 }
 
 .dropdown{
@@ -114,7 +115,7 @@ nav{
     width: 100%;
     height: auto;
     backdrop-filter: brightness(40%) blur(3px);
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px white;
     transition: 0.2s linear;
 }
 
@@ -129,7 +130,7 @@ nav{
 }
 
 .dropdown .links a:hover{
-    background-color: rgb(109,67, 0);
+    background-color:  rgb(250, 240, 230);
 }
 
 section{
@@ -141,7 +142,7 @@ section{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -155,7 +156,7 @@ section{
 }
 
 .main-container .content{
-    color: black;
+    color: white;
     width: 40%;
     min-height: 100px;
 }
@@ -165,8 +166,8 @@ section{
 }
 
 .content h1 span{
-    color: rgb(109,67, 0);
-    text-shadow: 0 0 10px rgb(109,67, 0);
+    color:  rgb(250, 240, 230);
+    text-shadow: 0 0 10px  rgb(250, 240, 230);
 }
 
 .content .typewriter{
@@ -175,9 +176,9 @@ section{
 }
 
 .content .typewriter span{
-    color: rgb(109,67, 0);
+    color:  rgb(250, 240, 230);
     font-size: 2.5rem;
-    text-shadow: 0 0 5px rgb(109,67, 0);
+    text-shadow: 0 0 5px  rgb(250, 240, 230);
     position: relative;
     transition: 0.3s linear;
 }
@@ -192,7 +193,7 @@ section{
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid black;
+    border-left: 3px solid white;
     animation:  cursor 0.6s linear infinite;
 }
 
@@ -207,10 +208,10 @@ section{
         content: "Developer";
     }
     34%, 66%{
-        content: "Designer";
+        content: "Engineer";
     }
     67%, 100%{
-        content: "Youtuber";
+        content: "Tech Enthusiast";
     }
 }
 
@@ -226,9 +227,8 @@ section{
     width: 3rem;
     height: 3rem;
     background-color:transparent;
-    border: 0.2rem solid rgb(109,67, 0);
     border-radius: 50%;
-    color:rgb(109,67, 0);
+    color: rgb(250, 240, 230);
     margin: 5px 10px;
     font-size: 1.5rem;
     transition: 0.2s linear;
@@ -237,16 +237,16 @@ section{
 .social-links i:hover{
     scale: 1.3;
     color: white;
-    background-color: rgb(109,67, 0);
-    filter: drop-shadow(0 0 10px rgb(109,67,0));
+    outline: 1px solid white;
 }
 
 .content button{
+    cursor: pointer;
     width: 40%;
     height: 6vh;
     margin: 30px;
-    background-color: rgb(109,67, 0);
-    color: white;
+    background-color: rgb(250, 240, 230);
+    color: rgb(33, 33, 33);
     border: none;
     outline: none;
     font-size: 100%;
@@ -255,13 +255,18 @@ section{
     transition: 0.2s linear;
 }
 
-.content button:hover{
- scale: 1.1;
- color: rgb(109,67, 0);
- border: 2px solid rgb(109,67, 0);
- background-color: transparent;
- font-weight: 700;
- box-shadow: 0 0 40px rgb(109,67, 0);
+    .content button:hover{
+    color: rgb(33, 33, 33);
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(250, 240, 230);
+    }
+
+.content button:active {
+    background-color: rgb(33, 33, 33);
+    color: rgb(250, 240, 230);
+    box-shadow: none;
+    outline: 1px solid white;
+    transition: none;
 }
 
 @media (max-width:884px) {
