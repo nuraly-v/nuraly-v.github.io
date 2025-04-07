@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 221 39% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+
+    scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .hero-text-gradient {
+    @apply bg-gradient-to-r from-blue-light via-blue to-blue-dark bg-clip-text text-transparent;
+  }
+  
+  .project-card {
+    @apply rounded-lg bg-gradient-to-br from-secondary/80 to-navy-light/80 p-6 shadow-xl hover:shadow-2xl transition-all duration-300;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
+  }
+  
+  .button-primary {
+    @apply px-6 py-3 bg-blue hover:bg-blue-dark text-white rounded-md transition-colors duration-300 font-medium;
+  }
+  
+  .nav-link {
+    @apply text-muted-foreground hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 hero-text-gradient inline-block;
+  }
+  
+  .skill-bar {
+    @apply h-2 bg-secondary rounded-full overflow-hidden;
+  }
+  
+  .skill-progress {
+    @apply h-full bg-gradient-to-r from-blue-light to-blue;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.navy.dark');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.blue.dark');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.blue.DEFAULT');
+}
+
+/* Animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-1 { transition-delay: 100ms; }
+.stagger-2 { transition-delay: 200ms; }
+.stagger-3 { transition-delay: 300ms; }
+.stagger-4 { transition-delay: 400ms; }
+.stagger-5 { transition-delay: 500ms; }
