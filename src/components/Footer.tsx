@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div>
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Nuraly Astanakulov. All rights reserved.
+            © {new Date().getFullYear()} Neo. All rights reserved.
           </p>
         </div>
         

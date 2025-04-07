@@ -9,7 +9,7 @@ const Hero = () => {
   
   const phrases = [
     "Software Engineer",
-    "Enrepreneur",
+    "Entrepreneur",
     "Data Scientist",
     "Problem Solver",
     "Risk Taker",
