@@ -30,7 +30,7 @@ const Index = () => {
 
   // Update document title
   useEffect(() => {
-    document.title = 'Nuraly Astanakulov | Portfolio';
+    document.title = 'Neo | Portfolio';
   }, []);
 
   return (

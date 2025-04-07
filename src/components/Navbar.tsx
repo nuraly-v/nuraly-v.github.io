@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="#projects" className="nav-link">Projects</a>
           <a href="#contact" className="nav-link">Contact</a>
           <a 
-            href="/Nuraly_Astanakulov_Resume.pdf" 
+            href="/resume_na.pdf" 
             className="button-primary text-sm" 
             download
           >
@@ -97,7 +97,7 @@ const Navbar = () => {
               Contact
             </a>
             <a 
-              href="/Nuraly_Astanakulov_Resume.pdf" 
+              href="/resume_na.pdf" 
               className="button-primary text-center mt-4" 
               download
               onClick={() => setIsMenuOpen(false)}
