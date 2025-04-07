@@ -21,6 +21,12 @@
       name="twitter:image"
       content="https://lovable.dev/opengraph-image-p98pqg.png"
     />
+    <script>
+      // GitHub Pages 404 fallback for SPA routing
+      if (location.pathname !== "/" && !location.pathname.includes(".")) {
+        location.replace("/" + location.pathname);
+      }
+    </script>
   </head>
 
   <body>
@@ -29,10 +35,4 @@
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
-  <script>
-    // GitHub Pages 404 fallback for SPA routing
-    if (location.pathname !== "/" && !location.pathname.includes(".")) {
-      location.replace("/" + location.pathname);
-    }
-  </script>
 </html>
